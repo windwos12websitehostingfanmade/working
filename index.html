@@ -3,50 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real-Time Clock</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            background: url('https://th.bing.com/th/id/OIP._RfsWNBdmqJcPqBULsLn8AHaDo?w=302&h=171&c=7&r=0&o=5&pid=1.7') no-repeat center center fixed;
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-family: Arial, sans-serif;
-            overflow: hidden;
-        }
-        .clock {
-            font-size: 3em;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.8); /* Faded effect */
-            backdrop-filter: blur(5px); /* Optional: to add a blur effect to the text */
-            padding: 10px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: adds shadow for better visibility */
-        }
-    </style>
+    <title>Sample Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="clock" id="clock"></div>
-    <script>
-        function updateClock() {
-            const now = new Date();
-            const hours = String(now.getHours()).padStart(2, '0');
-            const minutes = String(now.getMinutes()).padStart(2, '0');
-            const seconds = String(now.getSeconds()).padStart(2, '0');
-            const timeString = `${hours}:${minutes}:${seconds}`;
-
-            document.getElementById('clock').textContent = timeString;
-        }
-
-        // Update the clock every second
-        setInterval(updateClock, 1000);
-
-        // Initialize the clock immediately
-        updateClock();
-    </script>
+    <header>
+        <h1>My Sample Page</h1>
+    </header>
+    <main>
+        <section class="content">
+            <h2>Welcome</h2>
+            <p>This is a sample page that looks like the image provided.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Website</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
