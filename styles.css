@@ -4,51 +4,28 @@ body, h1, p {
     padding: 0;
 }
 
-/* Basic page styles */
+/* Full-page background and center alignment */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #0044cc;
     color: white;
+    background: url('https://media-cdn.tripadvisor.com/media/vr-splice-j/09/b4/14/88.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#container {
     text-align: center;
-    padding: 10px 0;
 }
 
-header h1 {
-    font-size: 2.5em;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-.content {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-footer {
-    background-color: #0044cc;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-/* Date and time styles */
 #date-time {
-    position: relative;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    padding: 20px;
     display: inline-block;
 }
 
@@ -58,9 +35,8 @@ footer {
 }
 
 #time {
-    font-size: 2.5em;
+    font-size: 3em;
     font-weight: bold;
-    color: #333;
     animation: fade 2s infinite;
 }
 
